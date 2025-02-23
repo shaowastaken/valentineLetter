@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+#text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Pixelify Sans", serif;
+    font-size: 3vw;
+    /* Adjusted to make text smaller for full HD screens */
+
+    background-image: url(assets/Balloon1L.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 50vw;
+    /* Set a specific width for the balloon */
+    height: 50vh;
+    /* Set a specific height for the balloon */
+
+    padding: 9%;
+    /* Add some padding for better spacing within the balloon */
+    box-sizing: border-box;
+    /* Include padding in the element's total width and height */
+
+    overflow: hidden;
+    /* Hide any overflowing text */
+    word-wrap: break-word;
+    /* Wrap text within the balloon */
+}
+
+#pinguGif {
+    height: 40vh;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #text {
+
+        text-align: center;
+        font-family: "Pixelify Sans", serif;
+        font-size: 4vw;
+
+        background-image: url(assets/Balloon1L.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        max-width: 90%;
+
+        max-height: 90%;
+
+        overflow: hidden;
+
+        word-wrap: break-word;
+
+        padding: 5%;
+    }
+
+    #pinguGif {
+        position: absolute;
+        top: 50vh;
+        height: 15vh;
+    }
+}
+
+.pixelify-sans-700> {
+    font-family: "Pixelify Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
